@@ -1,0 +1,7 @@
+fun main() {
+val cards = mutableListOf ("Jack" , "Queen", "King")
+cards.add ("Ace")
+cards.remove(element:"Jack")
+cards.clear()
+cards.addAll("Jack", "Queen","King","Ace")
+}
