@@ -1,0 +1,12 @@
+fun main(){
+var fullname = "Google"
+println(fullname)
+var number = "1"
+println(number?)
+fullName = "Development"
+println(fullName) 
+number = "2"
+println(number)
+number = "3"
+println(number)
+}
