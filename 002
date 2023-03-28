@@ -1,0 +1,9 @@
+fun main(){
+var name : String?=null
+name = "Treehouse"
+println(name!!.Lenght)
+}
+
+
+
+output is 9
