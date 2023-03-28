@@ -1,0 +1,6 @@
+fun main (){
+ val cards = mutableListOf("Jack", "Queen","King")
+ for (cards in cards){
+ println(cards)
+ }
+ }
