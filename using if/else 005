@@ -1,0 +1,9 @@
+fun main(){
+var calories = 2001
+if (calories > 2000)
+println("you've eaten up all your calories")
+else if(calories>1500)
+println("You have  few more calories to eat")
+else
+println("you haven't eaten up all your calories")
+}
