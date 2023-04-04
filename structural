@@ -1,0 +1,11 @@
+fun main(){
+//structural
+var name1 = "Donn"
+var name2 = "Tushar"
+println(name1 == name2)
+
+var name1 = "Donn"
+var name2 = "Donn"
+println(name1 != name2)
+// == qual
+// != inequality
