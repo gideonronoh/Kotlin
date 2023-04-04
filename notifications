@@ -1,0 +1,5 @@
+fun main(){
+val age = 10
+if (age > 10)
+println("The number is greater") else println ("The number is smaller)
+}
