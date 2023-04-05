@@ -6,4 +6,5 @@ purple cow()
 }
 fun purple cow(){
 println ("Hello purple cow")
+println("Hello there")
 }
