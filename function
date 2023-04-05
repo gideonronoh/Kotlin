@@ -1,0 +1,9 @@
+fun main (){
+purple cow()
+purple cow()
+purple cow()
+purple cow()
+}
+fun purple cow(){
+println ("Hello purple cow")
+}
