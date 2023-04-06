@@ -1,0 +1,14 @@
+fun main (){
+    sayHiAndy()
+    saybye()
+    saymoo()
+}
+fun sayHiAndy(){
+    println("Hello")
+}
+fun saybye(){
+    println("Bye")
+}
+fun saymoo(){
+    println("moo")
+}
