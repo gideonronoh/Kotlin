@@ -1,0 +1,21 @@
+fun main() {
+    sayHi()
+    val age = 32
+    fun dowork() {
+        if (age < 21) {
+            println("not eligible")
+        } else {
+            println("eligible")
+        }
+    }
+    dowork()
+}
+SINGLE LINE FORM
+
+fun main (){
+    sayHi()
+    val age = 32
+    fun dowork()= if age(<32) println("noteligible")else println("Eligible")
+    dowork()
+}
+fun sayHi() =println("sayHi")
