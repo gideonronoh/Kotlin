@@ -1,0 +1,5 @@
+val str: String? = null
+
+val uppercase = str?.toUpperCase() // safe call operator used to call the toUpperCase() method
+
+println(uppercase) // prints "null"
