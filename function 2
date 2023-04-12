@@ -1,0 +1,8 @@
+fun main (){
+purpleCow()
+{
+fun purpleCow(){
+println("Hello world")
+println("My name is ")
+println("PurpleCow")
+}
