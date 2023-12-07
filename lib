@@ -1,0 +1,34 @@
+data class Book(val title: String, val author: String, val publicationYear: Int)
+
+class Library(private val books: MutableList<Book> = mutableListOf()) {
+    fun addBook(book: Book) {
+        books.add(book)
+    }
+
+    fun findBooksByAuthor(author: String): List<Book> {
+        return books.filter { it.author == author }
+    }
+
+    fun displayAllBooks() {
+        println("Library Books:")
+        books.forEach { println("${it.title} by ${it.author} (${it.publicationYear})") }
+    }
+}
+
+fun main() {
+    val library = Library()
+
+    val book1 = Book("The Great Gatsby", "F. Scott Fitzgerald", 1925)
+    val book2 = Book("To Kill a Mockingbird", "Harper Lee", 1960)
+    val book3 = Book("1984", "George Orwell", 1949)
+
+    library.addBook(book1)
+    library.addBook(book2)
+    library.addBook(book3)
+
+    println("Books by George Orwell:")
+    library.findBooksByAuthor("George Orwell").forEach { println("${it.title} (${it.publicationYear})") }
+
+    println("\nAll Books in the Library:")
+    library.displayAllBooks()
+}
