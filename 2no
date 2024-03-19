@@ -1,0 +1,14 @@
+import java.util.Scanner
+
+fun main() {
+    val scanner = Scanner(System.`in`)
+    
+    println("Enter the first number:")
+    val number1 = scanner.nextDouble()
+    
+    println("Enter the second number:")
+    val number2 = scanner.nextDouble()
+    
+    val sum = number1 + number2
+    println("The sum of $number1 and $number2 is: $sum")
+}
