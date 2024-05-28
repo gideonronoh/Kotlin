@@ -1,0 +1,39 @@
+import okhttp3.*
+import java.io.IOException
+
+fun main() {
+    logout()
+}
+
+fun logout() {
+    val client = OkHttpClient()
+
+    val request = Request.Builder()
+        .url("https://example.com/logout/")  // Replace with your logout endpoint
+        .post(RequestBody.create(null, ""))  // Sending an empty body
+        .addHeader("Content-Type", "application/json")
+        .addHeader("X-CSRFToken", getCSRFToken())  // If you need to include a CSRF token
+        .build()
+
+    client.newCall(request).enqueue(object : Callback {
+        override fun onFailure(call: Call, e: IOException) {
+            e.printStackTrace()
+        }
+
+        override fun onResponse(call: Call, response: Response) {
+            response.use {
+                if (!response.isSuccessful) {
+                    println("Logout failed: ${response.code}")
+                } else {
+                    println("Logout successful")
+                    // Redirect to login page or update UI accordingly
+                }
+            }
+        }
+    })
+}
+
+fun getCSRFToken(): String {
+    // Implement your method to get the CSRF token
+    return "your-csrf-token"
+}
