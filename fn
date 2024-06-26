@@ -1,0 +1,41 @@
+fun main() {
+    // Calling a simple function with no parameters and no return value
+    sayHello()
+
+    // Calling a function with parameters and no return value
+    greet("Alice")
+
+    // Calling a function with parameters and a return value
+    val sumResult = sum(10, 20)
+    println("Sum: $sumResult")
+
+    // Calling a function with a default parameter value
+    greetWithDefault()
+
+    // Calling an inline function
+    val maxResult = max(5, 10)
+    println("Max: $maxResult")
+}
+
+// A simple function with no parameters and no return value
+fun sayHello() {
+    println("Hello, world!")
+}
+
+// A function with a parameter and no return value
+fun greet(name: String) {
+    println("Hello, $name!")
+}
+
+// A function with parameters and a return value
+fun sum(a: Int, b: Int): Int {
+    return a + b
+}
+
+// A function with a default parameter value
+fun greetWithDefault(name: String = "Guest") {
+    println("Hello, $name!")
+}
+
+// An inline function
+fun max(a: Int, b: Int): Int = if (a > b) a else b
